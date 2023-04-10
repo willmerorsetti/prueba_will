@@ -1,0 +1,127 @@
+#==============================================================
+#Sustituye el archivo application 
+#                         por YML propterties en forma de arbol 
+#==============================================================
+#==============================================================
+#INICIO Server properties
+#==============================================================
+server:                         
+  port: 8182
+  error:
+    whitelabel:      enabled: true
+      
+spring:
+  banner:
+    location: classpath:banner.txt
+
+     
+#==============================================================
+#INICIO Configuracion persistencia   
+#==============================================================
+  datasource:                   
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: 
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      #naming:
+        #strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+        hibernate:
+          dialect:org.hibernate.dialect.MySQL5Dialect       
+#==============================================================
+# spring.thymeleaf.cache
+
+#Whether to enable template caching.
+
+#true
+
+#spring.thymeleaf.check-template
+
+#Whether to check that the template exists before rendering it.
+
+#true
+
+#spring.thymeleaf.check-template-location
+
+#Whether to check that the templates location exists.
+
+#true
+
+#spring.thymeleaf.enable-spring-el-compiler
+
+#Enable the SpringEL compiler in SpringEL expressions.
+
+#false
+
+#spring.thymeleaf.enabled
+
+#Whether to enable Thymeleaf view resolution for Web frameworks.
+
+#true
+
+#spring.thymeleaf.encoding
+
+#Template files encoding.
+
+#UTF-8
+
+#spring.thymeleaf.excluded-view-names
+
+#Comma-separated list of view names (patterns allowed) that should be excluded from resolution.
+
+#spring.thymeleaf.mode
+
+#Template mode to be applied to templates. See also Thymeleaf's TemplateMode enum.
+
+#HTML
+
+#spring.thymeleaf.prefix
+
+#Prefix that gets prepended to view names when building a URL.
+
+#classpath:/templates/
+
+#spring.thymeleaf.reactive.chunked-mode-view-names
+
+#Comma-separated list of view names (patterns allowed) that should be the only ones executed in CHUNKED mode when a max chunk size is set.
+
+#spring.thymeleaf.reactive.full-mode-view-names
+
+#Comma-separated list of view names (patterns allowed) that should be executed in FULL mode even if a max chunk size is set.
+
+#spring.thymeleaf.reactive.max-chunk-size
+
+#Maximum size of data buffers used for writing to the response. Templates will execute in CHUNKED mode by default if this is set.
+
+#0B
+
+#spring.thymeleaf.reactive.media-types
+
+#Media types supported by the view technology.
+
+#[text/html, application/xhtml+xml, application/xml, text/xml, application/rss+xml, application/atom+xml, application/javascript, application/ecmascript, text/javascript, text/ecmascript, application/json, 
+#==============================================================
+
+
+
+
+#==============================================================
+# server.error.whitelabel.enabled Whether to enable the default error page displayed in browsers in case of a server error. true
+#==============================================================
+#server: 
+#  error:  
+#    whitelabel: 
+#      enabled:  false
+
+
+
+#==============================================================
+# 
+#==============================================================
+    
+    
+    
+    
